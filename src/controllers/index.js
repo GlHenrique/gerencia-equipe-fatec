@@ -1,5 +1,5 @@
 const controller = {};
 
-controller.listar = async (req, res) => res.json({ hello: 'World' });
+controller.ping = async (req, res) => res.json({ date: new Date() });
 
 module.exports = controller;
