@@ -2,7 +2,7 @@
 
 ## Abstract
 
-> This project aims to create a non-relational database in WEB Programming classes at Fatec Franca, and for this, this system manages teams within a company, with supervisors, liders and employees.
+> This project aims to create a non-relational database in WEB Programming classes at Fatec Franca, and for this, this system manages teams within a company, with supervisors, leaders and employees.
 
 ## Tools
 
