@@ -4,9 +4,9 @@
 
 > This project aims to create a non-relational database in WEB Programming classes at Fatec Franca, and for this, this system manages teams within a company, with supervisors, liders and employees.
 
-## Ferramentas
+## Tools
 
-> Foi utilizado nesse projeto:
+> Techs used in this project:
 - [NodeJS](https://nodejs.org)
 - [Mongoose](https://mongoosejs.com/)
 - [env-cmd](https://github.com/toddbluhm/env-cmd)
