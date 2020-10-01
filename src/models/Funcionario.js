@@ -8,6 +8,9 @@ const schema = mongoose.Schema({
   cpf: {
     type: String,
     required: true,
+    index: {
+      unique: true,
+    },
   },
   data_nascimento: {
     type: Date,

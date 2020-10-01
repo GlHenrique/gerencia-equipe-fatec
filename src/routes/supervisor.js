@@ -7,6 +7,6 @@ router.post('/', supervisor.novo);
 router.get('/', supervisor.listar);
 router.get('/:id', supervisor.listarUm);
 router.put('/:id', supervisor.editar);
-router.delete('/:id', supervisor.excluir);
+router.delete('/', supervisor.excluir);
 
 module.exports = router;

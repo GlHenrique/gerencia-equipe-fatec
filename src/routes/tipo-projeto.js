@@ -7,6 +7,6 @@ router.post('/', tipoProjeto.novo);
 router.get('/', tipoProjeto.listar);
 router.get('/:id', tipoProjeto.listarUm);
 router.put('/:id', tipoProjeto.editar);
-router.delete('/:id', tipoProjeto.excluir);
+router.delete('/', tipoProjeto.excluir);
 
 module.exports = router;

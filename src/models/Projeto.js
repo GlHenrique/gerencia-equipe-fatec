@@ -4,6 +4,9 @@ const schema = mongoose.Schema({
   nome: {
     type: String,
     required: true,
+    index: {
+      unique: true,
+    },
   },
   data_inicio: {
     type: Date,
@@ -13,18 +16,33 @@ const schema = mongoose.Schema({
     type: Date,
     required: true,
   },
-  salario: {
+  integrantes: {
+    type: [String],
+    ref: 'Funcionario',
+    required: true,
+  },
+  descricao: {
     type: String,
     required: true,
   },
-  cargo: {
-    type: mongoose.ObjectId,
-    ref: 'Cargo',
+  supervisor: {
+    type: [String],
+    ref: 'Supervisor',
     required: true,
   },
-  supervisor: {
+  lider: {
     type: mongoose.ObjectId,
-    ref: 'Supervisor',
+    ref: 'Lider',
+    required: true,
+  },
+  tipo: {
+    type: mongoose.ObjectId,
+    ref: 'TipoProjeto',
+    required: true,
+  },
+  status: {
+    type: mongoose.ObjectId,
+    ref: 'StatusProjeto',
     required: true,
   },
 });

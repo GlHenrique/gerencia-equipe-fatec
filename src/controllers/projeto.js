@@ -16,7 +16,11 @@ controller.novo = async (req, res) => {
 
 controller.listar = async (req, res) => {
   try {
-    const dados = await Projeto.find();
+    const dados = await Projeto
+      .find()
+      .populate('supervisor', null, 'Supervisor')
+      .populate('integrantes', null, 'Funcionario');
+      // .populate('integrantes', null, 'funcionario');
     res.send(dados);
   } catch (err) {
     console.log(err);
