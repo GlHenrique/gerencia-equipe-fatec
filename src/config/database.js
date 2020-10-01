@@ -5,6 +5,7 @@ module.exports = (uri) => {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
+    useFindAndModify: false,
   });
 
   mongoose.connection.on('connected', () => console.log('Database Connected'));

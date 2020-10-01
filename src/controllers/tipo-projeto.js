@@ -42,7 +42,7 @@ controller.listarUm = async (req, res) => {
 controller.editar = async (req, res) => {
   const { id } = req.params;
   try {
-    const dados = await TipoProjeto.findOneAndUpdate(id, req.body);
+    const dados = await TipoProjeto.findByIdAndUpdate(id, req.body);
     if (dados) {
       res.send(204);
     } else {
