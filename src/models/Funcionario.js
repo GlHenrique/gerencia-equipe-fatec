@@ -27,8 +27,8 @@ const schema = mongoose.Schema({
   },
   supervisor: {
     type: mongoose.ObjectId,
-    ref: 'Supervisor',
-    required: true,
+    ref: 'Funcionario',
+    required: false,
   },
 });
 

@@ -26,13 +26,13 @@ const schema = mongoose.Schema({
     required: true,
   },
   supervisor: {
-    type: [String],
-    ref: 'Supervisor',
+    type: mongoose.ObjectId,
+    ref: 'Funcionario',
     required: true,
   },
   lider: {
     type: mongoose.ObjectId,
-    ref: 'Lider',
+    ref: 'Funcionario',
     required: true,
   },
   tipo: {

@@ -10,8 +10,6 @@ const IndexRouter = require('./routes/index');
 const StatusProjeto = require('./routes/status-projeto');
 const TipoProjeto = require('./routes/tipo-projeto');
 const Cargo = require('./routes/cargo');
-const Supervisor = require('./routes/supervisor');
-const Lider = require('./routes/lider');
 const Funcionario = require('./routes/funcionario');
 const Projeto = require('./routes/projeto');
 
@@ -24,8 +22,6 @@ app.use('/', IndexRouter);
 app.use('/tipo-projeto', TipoProjeto);
 app.use('/status-projeto', StatusProjeto);
 app.use('/cargo', Cargo);
-app.use('/supervisor', Supervisor);
-app.use('/lider', Lider);
 app.use('/funcionario', Funcionario);
 app.use('/projeto', Projeto);
 
