@@ -43,7 +43,7 @@ const schema = mongoose.Schema({
   status: {
     type: mongoose.ObjectId,
     ref: 'StatusProjeto',
-    required: true,
+    required: false,
   },
 });
 
