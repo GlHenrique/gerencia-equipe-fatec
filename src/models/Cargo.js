@@ -5,6 +5,10 @@ const schema = mongoose.Schema({
     type: String,
     required: true,
   },
+  permanent: {
+    type: Boolean,
+    required: false,
+  }
 });
 
 module.exports = mongoose.model('Cargo', schema, 'cargo');
